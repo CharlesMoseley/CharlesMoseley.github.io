@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    </head>
-    <body>
-    <h1> MP3 Publish Test </h1>
-    <p style="background-color:gold; color:gold; font-size:20%; margin:3px";>b</p>
-    <p style="background-color:red; color:red; font-size:20%; margin:3px";>b</p>
-    <p style="background-color:dodgerblue; color:dodgerblue; font-size:80%; margin:3px";>b</p>
-    <p> Oh look! An <i>appropriate</i> time for using a sans-serif font!</p>
-    
-    </body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+        <title>Audio Test HTML</title>
+	
+	</head>
+	<body>
+	
+	<p>Volume</p>
+	<p id="VolumeIndicator"> </p>
+	
+	<audio controls id="velveteen"> 
+		<source src="sounds/08Velveteen.mp3" type="audio/mpeg">
+	</audio>
+	
+	<audio class="mp3audio" crossorigin="anonymous" src="sounds/04Surf.mp3"></audio>
+	
+	<button class="audiobutton" data-playing="false" role="switch" aria-checked="false">
+		<span>Play/Pause</span>
+	</button>
+	
+	<script src="js/popup.js"></script>
+	
+	<audio class="audio-output"></audio>
+	
+	</body>
 </html>
-
