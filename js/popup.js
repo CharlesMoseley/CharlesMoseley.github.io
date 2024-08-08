@@ -4,7 +4,9 @@ audioElement = document.querySelector(".mp3audio");
 
 track = audioContext.createMediaElementSource(audioElement);
 
-track.connect(audioContext.destination);
+const gainNode = audioContext.createGain();
+
+track.connect(gainNode).connect(audioContext.destination);
 
 const playButton = document.querySelector(".audiobutton");
 
